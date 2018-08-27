@@ -1,0 +1,522 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  font-family: Microsoft YaHei;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  background-color: #e7ebf3;
+  padding-right: 0 !important;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+a {
+  /*color: #7e8c8d;*/
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+
+a, a:active, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 10px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 10px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+html, body {
+  width: 100%;
+  min-width: 1200px;
+  overflow-x: auto !important;
+  font-family: "Microsoft YaHei";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.por {
+  position: relative;
+}
+
+.poa {
+  position: absolute;
+}
+
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+/* 重写element样式 */
+.el_content {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #d2dae9;
+  min-height: 400px;
+  height: 100%;
+}
+
+.el_long {
+  width: 100% !important;
+}
+
+.el_add_group .el_group_input {
+  width: calc(100% - 85px);
+}
+
+.review_tools, .el_tools {
+  overflow: hidden;
+  min-height: 1px;
+}
+
+.el_tools {
+  margin: 10px 0;
+}
+
+.el_top_title {
+  width: 100%;
+  height: 15px;
+}
+
+.el_box .el-row {
+  margin-top: 20px;
+}
+
+.el_th, .el_th th {
+  background: #f0f0f0;
+  color: #999999;
+}
+
+.el_breadcrumb_root {
+  font-weight: bold;
+}
+
+.el_row .el-col {
+  margin-top: 10px;
+}
+
+.el_hidden {
+  display: none;
+}
+
+.el_form {
+  width: 100%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.el_form .el_name {
+  width: 100px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #333333;
+  float: left;
+  font-weight: bold;
+}
+
+.el_form .el_tool {
+  width: calc(100% - 100px);
+  float: left;
+}
+
+/* menu */
+
+.content_report {
+  height: 100%;
+  overflow: hidden;
+}
+
+dl.menu_box a:hover, dl.menu_box a.active {
+  background: #fff;
+  color: #666;
+}
+
+dl.menu_box {
+  width: 129px;
+  background: #eee;
+  height: 100%;
+  float: left;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  border-right: 1px solid #d2dae9;
+}
+
+dl.menu_box dd p {
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+dl.menu_box a {
+  display: block;
+  width: 100% !important;
+  color: #666;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.content_box {
+  float: left;
+  width: calc(100% - 170px);
+  /*width: calc(100% - 225px);*/
+  margin: 20px 0 20px 20px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.rds-remark {
+  color: #e6a23c;
+  width: auto;
+  font-size: 12px;
+  display: inline-block;
+  border: 1px solid #f5dab1;
+  background: #fdf6ec;
+  border-radius: 4px;
+  line-height: 24px;
+  padding: 8px 20px;
+}
+
+.ve-toolbar div {
+  padding: 5px 10px !important;
+}
+
+.ve-toolbar div.ve-divider {
+  padding: 0 !important;
+}
+
+.ve-toolbar div.ve-select {
+  padding: 0 20px 0 10px !important;
+}
+
+.vue-html5-editor > .toolbar > ul > li .icon {
+  line-height: 16px;
+}
+
+.vue-html5-editor > .content {
+  height: 260px;
+}
+
+.el-loading-spinner .el-loading-text, .el-loading-spinner i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.el-loading-spinner i {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.sel_text .el-radio__input {
+  display: none;
+}
+
+.sel_text .el-radio__label {
+  padding: 3px 15px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #999999;
+}
+
+.sel_text .el-radio__input.is-checked + .el-radio__label {
+  background: #f0f0f0;
+  color: #666666 !important;
+}
+
+.dialog_model {
+  width: 800px;
+}
+
+.dialog_full {
+  width: 80%;
+}
+
+.el_line {
+  line-height: 40px;
+}
+
+.el_name {
+  text-align: right;
+  line-height: 40px;
+  font-size: 14px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.el-table .el-table-column--selection .cell {
+  -ms-text-overflow: initial;
+  text-overflow: initial;
+}
+
+.el-table {
+  margin-top: 20px;
+}
+
+.el-table th {
+  background: #f0f0f0;
+}
+
+.el-table .cell {
+  word-break: normal;
+  text-align: center;
+}
+
+.cell span.label {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.el-dialog__header {
+  border: 1px solid #dcdfe6;
+  padding: 10px 20px;
+}
+
+.el-dialog__title {
+  font-size: 16px;
+}
+
+.el-dialog__headerbtn {
+  top: 15px;
+}
+
+.el-popover--plain {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.avatar-uploader, .avatar-uploader .el-upload {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.avatar-uploader .avatar {
+  width: 100%;
+  height: 100%;
+  border: 1px #d9d9d9 dashed;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  min-height: 80px;
+  position: relative;
+  background: url(../img/bg.png) left top repeat;
+}
+
+.avatar img {
+  margin-top: 0 !important;
+}
+
+.avatar > i {
+  font-size: 40px;
+  color: #8c939d;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+}
+
+.avatar div {
+  width: 100%;
+  height: auto;
+}
+
+.w-e-text {
+  overflow-y: auto !important;
+}
+
+.w-e-toolbar {
+  padding: 10px 5px !important;
+}
+
+.w-e-text-container {
+  color: #666666;
+}
+
+.btn_download {
+  color: #30b8fe;
+  font-size: 14px;
+  float: right;
+  line-height: 40px;
+  padding-right: 5px;
+}
+
+a.btn {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+a.btn-primary {
+  color: #fff;
+  border-color: #30b8fe;
+  background: #30b8fe;
+}
+
+a.btn-disabled {
+  cursor: not-allowed;
+  color: rgba(48, 184, 254, 0.6) !important;
+  border-color: rgba(48, 184, 254, 0.13);
+  background-color: rgba(48, 184, 254, 0.06);
+}
+
+.td_set .cell {
+  text-align: left;
+}
+
+.w-e-toolbar .w-e-menu {
+  z-index: 999 !important;
+}
+
+.w-e-text-container {
+  z-index: 990 !important;
+}
+
+.dialog_mini {
+  width: 500px;
+}
+
+.el-tooltip__popper {
+  max-width: 400px !important;
+  line-height: 1.5;
+  word-break: break-all;
+}
